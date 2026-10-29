@@ -2,6 +2,9 @@
 
 Personal cybersecurity news aggregator. No backend server, no build step, no paid services.
 
+<img width="1280" height="720" alt="demo" src="https://github.com/user-attachments/assets/54edf6ac-ad1c-4155-843a-52817f562faf" />
+
+
 ## Quick start
 
 ```bash
