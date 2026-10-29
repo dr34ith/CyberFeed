@@ -1,110 +1,122 @@
-# CyberFeed
+<p align="center">
+  <strong>Your personal cybersecurity intelligence hub.</strong>
+  <br />
+  <sub>Security news. Threat intelligence. Continuous learning.</sub>
+</p>
 
-Personal cybersecurity news aggregator. No backend server, no build step, no paid services.
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/54edf6ac-ad1c-4155-843a-52817f562faf" width="100%" alt="CyberFeed dashboard preview" />
+</p>
 
-<img width="1280" height="720" alt="demo" src="https://github.com/user-attachments/assets/54edf6ac-ad1c-4155-843a-52817f562faf" />
+CyberFeed brings cybersecurity news, threat advisories, vulnerability reports, and security research from trusted sources into one interface. It also includes a personal PDF library with an integrated, book style reader for self paced learning.
 
+**Lightweight by design.** No backend server, build step, or paid services required.
 
-## Quick start
+## <span style="color:#38BDF8">Features</span>
+
+<table>
+  <tr>
+    <td width="50%">
+      <h3>Cybersecurity News</h3>
+      <p>Aggregates updates from 13 cybersecurity sources.</p>
+      <ul>
+        <li>Search and filter articles</li>
+        <li>Bookmark and track read status</li>
+        <li>Highlight critical security updates</li>
+      </ul>
+    </td>
+    <td width="50%">
+      <h3>Personal PDF Library</h3>
+      <p>A dedicated space for security research and study materials.</p>
+      <ul>
+        <li>Import and read PDF books</li>
+        <li>Store files locally with IndexedDB</li>
+        <li>Navigate pages and chapters with keyboard shortcuts</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <h3>Privacy First</h3>
+      <ul>
+        <li>No account required</li>
+        <li>Local browser storage for preferences and bookmarks</li>
+        <li>Content Security Policy included</li>
+      </ul>
+    </td>
+    <td width="50%">
+      <h3>Simple Setup</h3>
+      <ul>
+        <li>No frontend build process</li>
+        <li>Python standard library for feed fetching</li>
+        <li>Runs locally in your browser</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+## <span style="color:#38BDF8">Quick Start</span>
+
+### 1. Clone the repository
 
 ```bash
-# 1. Fetch the latest articles from 13 cybersecurity sources (stdlib only, no pip install needed)
+git clone <repository-url>
+cd CyberFeed
+```
+
+### 2. Fetch the latest feeds
+
+```bash
 python fetch_feeds.py
+```
 
-# 2. Serve the folder locally
+### 3. Start the local server
+
+```bash
 python -m http.server 8000
-
-# 3. Open http://localhost:8000/index.html
 ```
 
-The page reads `feeds.json` first. If it's missing or stale (e.g. you open `index.html`
-without ever running the fetcher), the page falls back to fetching the same sources live,
-in-browser, through public CORS proxies.
+Open [http://localhost:8000](http://localhost:8000) in your browser.
 
-## Project structure
+## <span style="color:#38BDF8">Project Structure</span>
 
-```
-index.html          - page shell, markup, CSP, news/library/reader view containers
-render-helpers.js   - shared DOM/formatting helpers (window.CF namespace), loaded first
-app.js              - news feed logic (fetch/parse, render, filters, state)
-books.js            - book feed: IndexedDB storage, pdf.js lazy-load, reader, reading timer
-fetch_feeds.py      - stdlib-only fetcher, writes feeds.json
-feeds.json          - generated snapshot (git-ignored except on CI; regenerate locally)
-README.md           - this file
-```
-
-## Features
-
-- Reads 13 cybersecurity RSS/Atom sources (news, advisories, vendor research blogs)
-- Hero briefing with a live stats strip (total articles, unread, bookmarks, sources,
-  reading time today)
-- Search, time filter (24h/7d/30d), category/source/tag filters
-- Auto-tagging (ransomware, malware, phishing, vulnerability, CVE extraction, etc.)
-- Trending topics panel
-- Critical Watch banner for high-severity keyword matches
-- Per-article cover images: shows the feed's own thumbnail when it provides one
-  (`media:thumbnail`, `enclosure`, `itunes:image`, or the first `<img>` in the article
-  body), otherwise a locally generated gradient cover — never a broken image, never a
-  random stock photo.
-- Bookmarks and read/unread tracking, persisted in `localStorage`
-- Dark/light theme (follows system preference by default, toggle overrides)
-- Card / compact view toggle
-- Export/import of bookmarks, read state, and custom feeds as JSON
-- Keyboard shortcuts (News view): `/` search, `j`/`k` navigate, `o` open, `b` bookmark, `t` theme
-- Content is sanitized before insertion (no raw HTML from feeds ever reaches the DOM),
-  links are restricted to http(s), and a CSP meta tag is set. A link that fails
-  validation renders as a visibly disabled "⚠ link unavailable" title instead of a
-  silent dead link.
-
-### Book feed (PDF reader)
-
-Switch to the **Books** tab to upload a PDF and read it in-page like a book:
-
-- Upload via **+ Add PDF**; the file is parsed and rendered entirely in your browser
-  with [pdf.js](https://mozilla.github.io/pdf.js/) (loaded from cdnjs, pinned to
-  `3.11.174`, only when you open the Books tab — it never loads on a normal news visit).
-- PDFs are stored **only in this browser** (IndexedDB) — nothing is uploaded anywhere,
-  and books don't sync across devices/browsers.
-- Page navigation (prev/next/jump) and zoom (50%–300%); your last-read page and zoom
-  level are remembered per book.
-- A reading timer runs while a book is open, pausing automatically when you switch
-  tabs away (Page Visibility API) and resuming when you come back. Total time read per
-  book is shown in the library list, and today's total appears in the news view's
-  stats strip.
-
-## Sources
-
-See `SOURCES` in `fetch_feeds.py`. Three originally-planned sources had dead feed URLs
-and were swapped for working ones:
-
-- Sophos News feed URL needed a trailing-slash fix.
-- MSRC blog feed is dead — replaced with the Microsoft Security Blog feed.
-- Google Cloud/Mandiant threat-intel RSS is dead — replaced with Cisco Talos.
-
-## Content security policy
-
-```
-default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com; worker-src 'self' blob: https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline'; img-src https: data: blob:; connect-src *; base-uri 'self'; form-action 'none'
+```text
+CyberFeed/
+├── index.html
+├── app.js
+├── books.js
+├── render-helpers.js
+├── fetch_feeds.py
+├── feeds.json
+└── README.md
 ```
 
-`script-src`/`worker-src` allow exactly one external host (cdnjs) for the pdf.js
-library and its worker — the one approved third-party dependency in this project.
-`img-src` allows `https:` (feed-provided article thumbnails), `data:` (generated
-gradient covers), and `blob:` (pdf.js page rendering). `connect-src *` is kept open
-deliberately for the CORS-proxy live-feed fallback.
+## <span style="color:#38BDF8">Technology Stack</span>
 
-## Known limitations
+| Component | Technology |
+|:--|:--|
+| Frontend | HTML, CSS, JavaScript |
+| Feed Fetcher | Python |
+| News Aggregation | RSS and Atom |
+| Browser Storage | LocalStorage and IndexedDB |
+| PDF Rendering | PDF.js |
 
-- No backend scheduling yet — you must run `fetch_feeds.py` manually to refresh `feeds.json`.
-- No dedupe across sources, no CISA KEV panel, no CVE/CVSS enrichment, no PWA/offline support yet.
-- Article list is capped at 300 rendered items (no pagination/virtualization yet).
-- Book feed is upload + paginated read + timer only: no text search within PDFs, no
-  annotations/highlights, no PDF-metadata-derived titles.
-- These are planned for v2 — see the roadmap discussed with the project owner.
+## <span style="color:#38BDF8">News Sources</span>
 
-## Roadmap
+CyberFeed's feed sources are configured in [`feeds.json`](feeds.json), making it easier to maintain and update the source list.
 
-v2 plan (sources.json-driven fetcher, cross-source dedupe, CISA KEV panel, CVE/CVSS
-enrichment, watchlist/alerts, scoring, daily digest, OPML source management, PWA,
-charts, GitHub Actions auto-update + Pages deploy) is tracked separately and built in
-milestones after v1 sign-off.
+## <span style="color:#38BDF8">Limitations</span>
+
+- Feed updates require running the Python fetcher.
+- Books, bookmarks, and preferences are stored locally in the browser.
+- Cloud synchronization and user accounts are not supported.
+
+## <span style="color:#38BDF8">License</span>
+
+Distributed under the MIT License. See [`LICENSE`](LICENSE) for details.
+
+---
+
+<p align="center">
+  <sub>Built for curiosity, continuous learning, and better security awareness.</sub>
+</p>
