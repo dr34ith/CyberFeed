@@ -4,10 +4,15 @@
   const { el, safeImageUrl, generateCoverSvg, formatDate } = window.CF;
 
   const FEEDS_JSON_URL = "feeds.json";
+  // corsproxy.io now requires a paid API key and allorigins' /raw endpoint has gone flaky,
+  // so this list leans on multiple independent proxies (including allorigins' JSON-wrapped
+  // /get endpoint, unwrapped below) and gives up on each one quickly rather than hanging.
   const CORS_PROXIES = [
-    (u) => `https://api.allorigins.win/raw?url=${encodeURIComponent(u)}`,
-    (u) => `https://corsproxy.io/?url=${encodeURIComponent(u)}`,
+    { build: (u) => `https://api.allorigins.win/raw?url=${encodeURIComponent(u)}`, unwrap: (t) => t },
+    { build: (u) => `https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(u)}`, unwrap: (t) => t },
+    { build: (u) => `https://api.allorigins.win/get?url=${encodeURIComponent(u)}`, unwrap: (t) => { try { return JSON.parse(t).contents || ""; } catch { return ""; } } },
   ];
+  const PROXY_TIMEOUT_MS = 8000;
   const MAX_SNIPPET = 320;
   const CRITICAL_KEYWORDS = ["critical", "actively exploited", "zero-day", "0-day", "emergency patch", "widespread exploitation"];
   const TAG_RULES = {
@@ -37,6 +42,11 @@
     { id: "unit42", name: "Unit 42 (Palo Alto)", url: "https://unit42.paloaltonetworks.com/feed/", category: "Research" },
     { id: "crowdstrike", name: "CrowdStrike Blog", url: "https://www.crowdstrike.com/blog/feed/", category: "Vendor" },
     { id: "therecord", name: "The Record", url: "https://therecord.media/feed/", category: "News" },
+    { id: "sans_isc", name: "SANS Internet Storm Center", url: "https://isc.sans.edu/rssfeed_full.xml", category: "Research" },
+    { id: "theregister", name: "The Register Security", url: "https://www.theregister.com/security/headlines.atom", category: "News" },
+    { id: "projectzero", name: "Google Project Zero", url: "https://projectzero.google/feed.xml", category: "Research" },
+    { id: "malwarebytes", name: "Malwarebytes Labs", url: "https://www.malwarebytes.com/blog/feed/index.xml", category: "Vendor" },
+    { id: "securityaffairs", name: "Security Affairs", url: "https://securityaffairs.com/feed", category: "News" },
   ];
 
   const LS = {
@@ -53,6 +63,9 @@
 
   const state = {
     items: [],
+    incoming: [],
+    generatedAt: null,
+    feedSource: "snapshot",
     read: new Set(loadJSON(LS.read, [])),
     bookmarks: new Set(loadJSON(LS.bookmarks, [])),
     customFeeds: loadJSON(LS.customFeeds, []),
@@ -61,6 +74,9 @@
     view: localStorage.getItem(LS.view) || "card",
     sort: "newest",
   };
+
+  const POLL_INTERVAL = { snapshot: 2 * 60 * 1000, live: 8 * 60 * 1000 };
+  let pollTimer = null;
 
   const CATEGORY_BADGE_CLASS = {
     Advisory: "badge-advisory",
@@ -121,16 +137,22 @@
 
   // ---------- Feed loading ----------
   async function loadFeeds() {
-    try {
-      const res = await fetch(FEEDS_JSON_URL, { cache: "no-store" });
-      if (res.ok) {
-        const data = await res.json();
-        if (data && Array.isArray(data.items) && data.items.length) {
-          return { items: data.items, health: data.health || [], source: "snapshot", generatedAt: data.generated_at };
+    // Opening index.html directly (file://) can never fetch feeds.json: browsers block
+    // fetch() against the local filesystem outright, so there's no point even trying.
+    if (location.protocol === "file:") {
+      console.warn("CyberFeed was opened as a local file:// page, so the feeds.json snapshot can't be loaded (browsers block fetch() of local files). Falling back to a live fetch; for the full experience, serve this folder over http(s), e.g. `python -m http.server`.");
+    } else {
+      try {
+        const res = await fetch(FEEDS_JSON_URL, { cache: "no-store" });
+        if (res.ok) {
+          const data = await res.json();
+          if (data && Array.isArray(data.items) && data.items.length) {
+            return { items: data.items, health: data.health || [], source: "snapshot", generatedAt: data.generated_at };
+          }
         }
+      } catch (e) {
+        console.warn("feeds.json unavailable, falling back to live proxy fetch", e);
       }
-    } catch (e) {
-      console.warn("feeds.json unavailable, falling back to live proxy fetch", e);
     }
     return fetchLiveViaProxies();
   }
@@ -143,12 +165,14 @@
   }
 
   async function fetchOneLive(source) {
-    for (const buildProxyUrl of CORS_PROXIES) {
+    for (const proxy of CORS_PROXIES) {
       try {
-        const res = await fetch(buildProxyUrl(source.url), { signal: AbortSignal.timeout(12000) });
+        const res = await fetch(proxy.build(source.url), { signal: AbortSignal.timeout(PROXY_TIMEOUT_MS) });
         if (!res.ok) continue;
         const text = await res.text();
-        const items = parseFeedXml(text, source);
+        const xml = proxy.unwrap(text);
+        if (!xml) continue;
+        const items = parseFeedXml(xml, source);
         if (items.length) return items;
       } catch {
         continue;
@@ -295,6 +319,15 @@
     track.style.animationDuration = `${duration}s`;
   }
 
+  function buildBookStack() {
+    // A tiny decorative stack of leaning book spines, used above each stat number.
+    return el("span", { class: "stat-books", "aria-hidden": "true" }, [
+      el("span", { class: "spine s1" }),
+      el("span", { class: "spine s2" }),
+      el("span", { class: "spine s3" }),
+    ]);
+  }
+
   function renderStats(items) {
     const strip = document.getElementById("stats-strip");
     if (!strip) return;
@@ -314,14 +347,14 @@
     if (!strip.dataset.built) {
       for (const s of stats) {
         strip.appendChild(el("div", { class: "stat-tile", "data-key": s.key }, [
-          el("div", { class: "stat-icon", text: s.icon }),
+          buildBookStack(),
           el("div", { class: "stat-value" }),
           el("div", { class: "stat-label", text: s.label }),
         ]));
       }
       strip.appendChild(el("div", { class: "stat-tile", id: "stat-reading-time" }, [
-        el("div", { class: "stat-icon", text: "⏱" }),
-        el("div", { class: "stat-value", text: "—" }),
+        buildBookStack(),
+        el("div", { class: "stat-value", text: "0m" }),
         el("div", { class: "stat-label", text: "Reading time today" }),
       ]));
       strip.dataset.built = "1";
@@ -545,7 +578,15 @@
     const container = document.getElementById("articles");
     container.innerHTML = "";
     document.getElementById("loading").style.display = "none";
-    document.getElementById("empty-state").style.display = filtered.length ? "none" : "block";
+    const emptyEl = document.getElementById("empty-state");
+    emptyEl.style.display = filtered.length ? "none" : "block";
+    if (!filtered.length) {
+      emptyEl.textContent = state.items.length
+        ? "No articles match your filters."
+        : (location.protocol === "file:"
+          ? "Couldn't load any articles. This page was opened as a local file, and browsers block it from reading feeds.json that way. Serve this folder over http(s) instead, e.g. run `python -m http.server` here and open http://localhost:8000."
+          : "Couldn't load any articles right now. The feed snapshot and live sources are both unreachable. Try Refresh in a moment.");
+    }
     document.getElementById("result-count").textContent = `${filtered.length} article${filtered.length === 1 ? "" : "s"}`;
     for (const item of filtered) container.appendChild(renderCard(item));
   }
@@ -619,11 +660,6 @@
       renderList();
     });
 
-    const sidebarToggle = document.getElementById("sidebar-toggle");
-    sidebarToggle.addEventListener("click", () => {
-      document.getElementById("sidebar").classList.toggle("open");
-    });
-
     document.getElementById("nav-home").addEventListener("click", () => {
       state.filters = { time: "all", status: null, category: null, source: null, tag: null, query: "" };
       document.getElementById("search").value = "";
@@ -658,10 +694,10 @@
 
     const root = document.documentElement;
     document.getElementById("theme-toggle").addEventListener("click", () => {
-      // CyberFeed's default identity is dark (no media-query fallback) — only an explicit
-      // data-theme="light" attribute switches it, so that's the only case treated as "light".
-      const current = root.getAttribute("data-theme") === "light" ? "light" : "dark";
-      const next = current === "dark" ? "light" : "dark";
+      // CyberFeed's default identity is light (no media-query fallback); only an explicit
+      // data-theme="dark" attribute switches it, so that's the only case treated as "dark".
+      const current = root.getAttribute("data-theme") === "dark" ? "dark" : "light";
+      const next = current === "light" ? "dark" : "light";
       root.setAttribute("data-theme", next);
       localStorage.setItem(LS.theme, next);
     });
@@ -824,14 +860,109 @@
     updateProfileBtn();
   }
 
+  // ---------- Live updates ----------
+  function setLiveDot(stale) {
+    const dot = document.getElementById("live-dot");
+    if (dot) dot.classList.toggle("stale", !!stale);
+  }
+
+  function updateFeedUpdatedText() {
+    const label = document.getElementById("feed-updated-text");
+    if (!label) return;
+    label.textContent = state.generatedAt ? formatDate(state.generatedAt) : "unknown";
+  }
+
+  function renderNewArticlesBanner() {
+    const banner = document.getElementById("new-articles-banner");
+    const btn = document.getElementById("new-articles-btn");
+    if (!banner || !btn) return;
+    const n = state.incoming.length;
+    if (n === 0) {
+      banner.classList.remove("show");
+      return;
+    }
+    btn.textContent = `↑ ${n} new ${n === 1 ? "story" : "stories"} available. Click to load`;
+    banner.classList.add("show");
+  }
+
+  function mergeIncoming() {
+    if (!state.incoming.length) return;
+    const seen = new Set(state.items.map((i) => i.link));
+    const fresh = state.incoming.filter((i) => !seen.has(i.link));
+    state.items = [...fresh, ...state.items];
+    state.incoming = [];
+    renderNewArticlesBanner();
+    render();
+    document.getElementById("feed")?.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+
+  async function pollFeeds() {
+    const btn = document.getElementById("refresh-btn");
+    btn?.classList.add("spinning");
+    try {
+      if (state.feedSource === "snapshot") {
+        const res = await fetch(FEEDS_JSON_URL, { cache: "no-store" });
+        if (!res.ok) throw new Error("bad status");
+        const data = await res.json();
+        if (!data || !Array.isArray(data.items)) throw new Error("bad payload");
+        if (data.generated_at) state.generatedAt = data.generated_at;
+        const known = new Set([...state.items, ...state.incoming].map((i) => i.link));
+        const fresh = data.items.filter((i) => !known.has(i.link));
+        if (fresh.length) {
+          state.incoming = [...fresh, ...state.incoming];
+          renderNewArticlesBanner();
+        }
+      } else {
+        const result = await fetchLiveViaProxies();
+        state.generatedAt = result.generatedAt;
+        const known = new Set([...state.items, ...state.incoming].map((i) => i.link));
+        const fresh = result.items.filter((i) => !known.has(i.link));
+        if (fresh.length) {
+          state.incoming = [...fresh, ...state.incoming];
+          renderNewArticlesBanner();
+        }
+      }
+      setLiveDot(false);
+    } catch (e) {
+      console.warn("Live poll failed, will retry", e);
+      setLiveDot(true);
+    } finally {
+      updateFeedUpdatedText();
+      btn?.classList.remove("spinning");
+    }
+  }
+
+  function startPolling() {
+    clearInterval(pollTimer);
+    const interval = POLL_INTERVAL[state.feedSource] || POLL_INTERVAL.snapshot;
+    pollTimer = setInterval(() => {
+      if (document.hidden) return;
+      pollFeeds();
+    }, interval);
+  }
+
+  function wireLiveUpdates() {
+    document.getElementById("refresh-btn")?.addEventListener("click", () => pollFeeds());
+    document.getElementById("new-articles-btn")?.addEventListener("click", mergeIncoming);
+    document.addEventListener("visibilitychange", () => {
+      if (!document.hidden) pollFeeds();
+    });
+    setInterval(updateFeedUpdatedText, 30000);
+    startPolling();
+  }
+
   // ---------- Init ----------
   async function init() {
     wireControls();
     wireOnboarding();
     const result = await loadFeeds();
     state.items = result.items;
+    state.generatedAt = result.generatedAt || null;
+    state.feedSource = result.source || "snapshot";
     document.getElementById("loading").style.display = "none";
     render();
+    updateFeedUpdatedText();
+    wireLiveUpdates();
   }
 
   init();

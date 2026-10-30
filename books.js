@@ -159,7 +159,7 @@
       return sum;
     }, 0);
     const valueEl = tile.querySelector(".stat-value");
-    if (valueEl) valueEl.textContent = total > 0 ? formatDuration(total) : "—";
+    if (valueEl) valueEl.textContent = total > 0 ? formatDuration(total) : "0m";
   }
 
   async function handleUpload(file) {
@@ -236,9 +236,21 @@
     }, 500);
   }
 
+  let flipResetTimer;
+  function triggerPageFlip() {
+    const wrap = document.getElementById("reader-canvas-wrap");
+    if (!wrap) return;
+    wrap.classList.remove("page-turn");
+    void wrap.offsetWidth; // restart the animation even on rapid consecutive page turns
+    wrap.classList.add("page-turn");
+    clearTimeout(flipResetTimer);
+    flipResetTimer = setTimeout(() => wrap.classList.remove("page-turn"), 450);
+  }
+
   function goToPage(n) {
     if (!reader.pdfDoc) return;
     const clamped = Math.min(Math.max(n, 1), reader.pdfDoc.numPages);
+    if (clamped !== reader.pageNum) triggerPageFlip();
     renderPage(clamped);
   }
 

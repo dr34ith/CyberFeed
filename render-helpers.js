@@ -27,16 +27,16 @@ window.CF = (function () {
     return String(s).replace(/[<>&"']/g, (c) => ({ "<": "&lt;", ">": "&gt;", "&": "&amp;", '"': "&quot;", "'": "&apos;" }[c]));
   }
 
-  // Cyan / electric-blue family only (matches the CyberFeed brand) — no purple or pink.
+  // Earthen / amber family (matches the CyberFeed brand palette).
   const COVER_PALETTES = [
-    ["#0ea5e9", "#2563eb"],
-    ["#06b6d4", "#0e7490"],
-    ["#2563eb", "#1e3a8a"],
-    ["#059669", "#0d9488"],
-    ["#dc2626", "#b91c1c"],
-    ["#d97706", "#b45309"],
-    ["#334155", "#0f172a"],
-    ["#0891b2", "#155e75"],
+    ["#C98A4B", "#9C5F26"],
+    ["#8CAA6E", "#5B7A3E"],
+    ["#7E9AAE", "#4F6B80"],
+    ["#697565", "#3C3D37"],
+    ["#D9693E", "#A8482A"],
+    ["#B9712F", "#7A4A1C"],
+    ["#5B6049", "#262B1D"],
+    ["#9CA786", "#697565"],
   ];
 
   function hashStr(s) {

@@ -34,6 +34,11 @@ SOURCES = [
     {"id": "unit42", "name": "Unit 42 (Palo Alto)", "url": "https://unit42.paloaltonetworks.com/feed/", "category": "Research"},
     {"id": "crowdstrike", "name": "CrowdStrike Blog", "url": "https://www.crowdstrike.com/blog/feed/", "category": "Vendor"},
     {"id": "therecord", "name": "The Record", "url": "https://therecord.media/feed/", "category": "News"},
+    {"id": "sans_isc", "name": "SANS Internet Storm Center", "url": "https://isc.sans.edu/rssfeed_full.xml", "category": "Research"},
+    {"id": "theregister", "name": "The Register Security", "url": "https://www.theregister.com/security/headlines.atom", "category": "News"},
+    {"id": "projectzero", "name": "Google Project Zero", "url": "https://projectzero.google/feed.xml", "category": "Research"},
+    {"id": "malwarebytes", "name": "Malwarebytes Labs", "url": "https://www.malwarebytes.com/blog/feed/index.xml", "category": "Vendor"},
+    {"id": "securityaffairs", "name": "Security Affairs", "url": "https://securityaffairs.com/feed", "category": "News"},
 ]
 
 TAG_RULES = {

@@ -41,7 +41,7 @@ README.md           - this file
 - Critical Watch banner for high-severity keyword matches
 - Per-article cover images: shows the feed's own thumbnail when it provides one
   (`media:thumbnail`, `enclosure`, `itunes:image`, or the first `<img>` in the article
-  body), otherwise a locally generated gradient cover — never a broken image, never a
+  body), otherwise a locally generated gradient cover. Never a broken image, never a
   random stock photo.
 - Bookmarks and read/unread tracking, persisted in `localStorage`
 - Dark/light theme (follows system preference by default, toggle overrides)
@@ -59,8 +59,8 @@ Switch to the **Books** tab to upload a PDF and read it in-page like a book:
 
 - Upload via **+ Add PDF**; the file is parsed and rendered entirely in your browser
   with [pdf.js](https://mozilla.github.io/pdf.js/) (loaded from cdnjs, pinned to
-  `3.11.174`, only when you open the Books tab — it never loads on a normal news visit).
-- PDFs are stored **only in this browser** (IndexedDB) — nothing is uploaded anywhere,
+  `3.11.174`, only when you open the Books tab; it never loads on a normal news visit).
+- PDFs are stored **only in this browser** (IndexedDB). Nothing is uploaded anywhere,
   and books don't sync across devices/browsers.
 - Page navigation (prev/next/jump) and zoom (50%–300%); your last-read page and zoom
   level are remembered per book.
@@ -75,8 +75,8 @@ See `SOURCES` in `fetch_feeds.py`. Three originally-planned sources had dead fee
 and were swapped for working ones:
 
 - Sophos News feed URL needed a trailing-slash fix.
-- MSRC blog feed is dead — replaced with the Microsoft Security Blog feed.
-- Google Cloud/Mandiant threat-intel RSS is dead — replaced with Cisco Talos.
+- MSRC blog feed is dead, replaced with the Microsoft Security Blog feed.
+- Google Cloud/Mandiant threat-intel RSS is dead, replaced with Cisco Talos.
 
 ## Content security policy
 
@@ -85,19 +85,19 @@ default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com; worker-src '
 ```
 
 `script-src`/`worker-src` allow exactly one external host (cdnjs) for the pdf.js
-library and its worker — the one approved third-party dependency in this project.
+library and its worker: the one approved third-party dependency in this project.
 `img-src` allows `https:` (feed-provided article thumbnails), `data:` (generated
 gradient covers), and `blob:` (pdf.js page rendering). `connect-src *` is kept open
 deliberately for the CORS-proxy live-feed fallback.
 
 ## Known limitations
 
-- No backend scheduling yet — you must run `fetch_feeds.py` manually to refresh `feeds.json`.
+- No backend scheduling yet. You must run `fetch_feeds.py` manually to refresh `feeds.json`.
 - No dedupe across sources, no CISA KEV panel, no CVE/CVSS enrichment, no PWA/offline support yet.
 - Article list is capped at 300 rendered items (no pagination/virtualization yet).
 - Book feed is upload + paginated read + timer only: no text search within PDFs, no
   annotations/highlights, no PDF-metadata-derived titles.
-- These are planned for v2 — see the roadmap discussed with the project owner.
+- These are planned for v2. See the roadmap discussed with the project owner.
 
 ## Roadmap
 
