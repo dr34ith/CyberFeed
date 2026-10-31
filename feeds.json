@@ -1,6 +1,141 @@
 {
-  "generated_at": "2026-10-31T06:56:41.011807+00:00",
+  "generated_at": "2026-10-31T13:27:03.592265+00:00",
   "items": [
+    {
+      "title": "From Beginner to Bug Hunter: Learning Cybersecurity in the AI Era.",
+      "link": "https://www.bleepingcomputer.com/news/security/from-beginner-to-bug-hunter-learning-cybersecurity-in-the-ai-era",
+      "summary": "[...]",
+      "published": "2026-10-31T13:10:19+00:00",
+      "image": null,
+      "source": "BleepingComputer",
+      "source_id": "bleepingcomputer",
+      "category": "News",
+      "tags": [],
+      "cves": []
+    },
+    {
+      "title": "Chainalysis discloses data breach from \"offensive agentic techniques\"",
+      "link": "https://www.bleepingcomputer.com/news/security/chainalysis-discloses-data-breach-from-offensive-agentic-techniques",
+      "summary": "Blockchain analytics firm Chainalysis disclosed a data breach after attackers used \"offensive agentic techniques\" to access internal systems and tools, exposing customer names, email addresses, user IDs, and organizational roles. [...]",
+      "published": "2026-10-31T12:50:09+00:00",
+      "image": null,
+      "source": "BleepingComputer",
+      "source_id": "bleepingcomputer",
+      "category": "News",
+      "tags": [
+        "data breach",
+        "critical infrastructure"
+      ],
+      "cves": []
+    },
+    {
+      "title": "Chainalysis Confirms Intrusion Into Internal Tools and Exposure of Customer Identity Data",
+      "link": "https://thehackernews.com/2026/10/chainalysis-confirms-intrusion-into.html",
+      "summary": "American blockchain analysis firm Chainalysis said it was the target of a cybersecurity incident in which an external actor accessed non-sensitive customer data. However, the company noted that the breach did not result in unauthorized access to its investigation content, authentication credentials, or session tokens. ",
+      "published": "2026-10-31T12:01:56+00:00",
+      "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiFRN0kXDPnLLvRBYqNZG4BTyUK0EaSxRtepYOQ-msXGAqu1IW8t2cdnav4ANAO8fXwY_-ug6Ictj29WcseInPhJmYOwpgcinvc8KO36A8HK6Wo41lgztgyH2jb9hGg7bVyWZ4A-adjBYuTi-hOJxMALa7myG172BWKwB_SyvrfMeqxH_3DdcyJxYwXFIKG/s1600/chain.jpg",
+      "source": "The Hacker News",
+      "source_id": "thehackernews",
+      "category": "News",
+      "tags": [
+        "data breach"
+      ],
+      "cves": []
+    },
+    {
+      "title": "Appraisal by AI: Model-driven victim prioritization in the VOLTA infostealer",
+      "link": "https://blog.talosintelligence.com/appraisal-by-ai-model-driven-victim-prioritization-in-the-volta-infostealer",
+      "summary": "The self-deleting VOLTA infostealer steals credentials, sessions, and cryptocurrency wallets. Then, it uses LLMs to profile victims and rank their most valuable assets.",
+      "published": "2026-10-31T12:00:00+00:00",
+      "image": null,
+      "source": "Cisco Talos",
+      "source_id": "talos",
+      "category": "Research",
+      "tags": [],
+      "cves": []
+    },
+    {
+      "title": "Syrian Hacker Gets Prison Time in US After Over a Decade on the Run",
+      "link": "https://www.securityweek.com/syrian-hacker-gets-prison-time-in-us-after-over-a-decade-on-the-run",
+      "summary": "A US court sentenced Syrian hacker Ahmad Umar Agha to 42 months for pro-Assad attacks on media, businesses, and government entities. The post Syrian Hacker Gets Prison Time in US After Over a Decade on the Run appeared first on SecurityWeek .",
+      "published": "2026-10-31T11:00:00+00:00",
+      "image": null,
+      "source": "SecurityWeek",
+      "source_id": "securityweek",
+      "category": "News",
+      "tags": [],
+      "cves": []
+    },
+    {
+      "title": "Wireshark 5.0.0rc1 Release, (Sat, Oct 31st)",
+      "link": "https://isc.sans.edu/diary/rss/33476",
+      "summary": "Wireshark Release Candidate 5.0.0 was published : soon we can expect a new major version of Wireshark.",
+      "published": "2026-10-31T10:52:53+00:00",
+      "image": null,
+      "source": "SANS Internet Storm Center",
+      "source_id": "sans_isc",
+      "category": "Research",
+      "tags": [],
+      "cves": []
+    },
+    {
+      "title": "YARA-X 1.22.1 Release, (Sat, Oct 31st)",
+      "link": "https://isc.sans.edu/diary/rss/33474",
+      "summary": "YARA-X&#;x26;#;39;s 1.22.1 is a bugfix version, it brings 2 bugfixes.",
+      "published": "2026-10-31T10:48:17+00:00",
+      "image": null,
+      "source": "SANS Internet Storm Center",
+      "source_id": "sans_isc",
+      "category": "Research",
+      "tags": [],
+      "cves": []
+    },
+    {
+      "title": "YARA-X 1.22.0 Release, (Sun, Oct 25th)",
+      "link": "https://isc.sans.edu/diary/rss/33454",
+      "summary": "YARA-X&#x26;#39&#x26;#x3b;s 1.22.0 release brings 11 improvements and 9 bugfixes.",
+      "published": "2026-10-31T10:45:40+00:00",
+      "image": null,
+      "source": "SANS Internet Storm Center",
+      "source_id": "sans_isc",
+      "category": "Research",
+      "tags": [],
+      "cves": []
+    },
+    {
+      "title": "Attackers Exploit Critical Drupal Commerce Core Vulnerability CVE-2026-118539",
+      "link": "https://securityaffairs.com/202162/security/attackers-exploit-critical-drupal-commerce-core-vulnerability-cve-2026-118539.html",
+      "summary": "Drupal warns that attackers are exploiting a critical authorization flaw in Commerce Core, putting vulnerable online stores at risk. Drupal warns that threat actors are exploiting a highly critical security flaw, tracked as CVE-2026-118539, in its Commerce Core module. The vulnerability is caused by missing authorizati",
+      "published": "2026-10-31T09:08:58+00:00",
+      "image": null,
+      "source": "Security Affairs",
+      "source_id": "securityaffairs",
+      "category": "News",
+      "tags": [
+        "vulnerability"
+      ],
+      "cves": [
+        "CVE-2026-118539"
+      ]
+    },
+    {
+      "title": "Attackers Chain Three Ivanti Connect Secure Flaws to Gain Unauthenticated Root Access",
+      "link": "https://thehackernews.com/2026/10/attackers-chain-three-ivanti-connect.html",
+      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added two security flaws impacting Ivanti Connect Secure (ICS) to its Known Exploited Vulnerabilities (KEV) catalog, following active exploitation in the wild. The vulnerabilities are listed below - CVE-2026-111357 (CVSS score: 8.8) - A missing ",
+      "published": "2026-10-31T08:27:43+00:00",
+      "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeqP4vPt6j2lLPFj77A_1OthmSKb8mItfBrX_q8sQCAUVgTry1FxKizDI2SCLS4CglfjgbVkaMDN8ainqoOZm2pdaF6xw7sU4STZhwIFPCLSz84YXQTVx2tquPo7YJsZhgOWcD3V_w5td9BA_vVuOu1cFcrgL3SXyLF4E24IyGotrzDcbJ-M1mA85biDuW/s1600/1000120841.jpg",
+      "source": "The Hacker News",
+      "source_id": "thehackernews",
+      "category": "News",
+      "tags": [
+        "vulnerability",
+        "cloud",
+        "critical infrastructure"
+      ],
+      "cves": [
+        "CVE-2026-111357"
+      ]
+    },
     {
       "title": "A Shared ChatGPT Link Could Run Attacker Code in Your Session and Read Private Chats",
       "link": "https://thehackernews.com/2026/10/a-shared-chatgpt-link-could-run.html",
@@ -23,6 +158,20 @@
       "source_id": "thehackernews",
       "category": "News",
       "tags": [],
+      "cves": []
+    },
+    {
+      "title": "Inside a malicious Claude Code-branded extension and its persistent SSH backdoor",
+      "link": "https://www.microsoft.com/en-us/security/blog/2026/10/30/inside-malicious-claude-code-branded-cursor-extension-persistent-ssh-backdoor",
+      "summary": "Microsoft analyzes a malicious Claude Code–branded extension, its persistent SSH backdoor, and guidance to detect and remediate it. The post Inside a malicious Claude Code-branded extension and its persistent SSH backdoor appeared first on Microsoft Security Blog .",
+      "published": "2026-10-31T01:02:57+00:00",
+      "image": null,
+      "source": "Microsoft Security Blog",
+      "source_id": "msrc",
+      "category": "Vendor",
+      "tags": [
+        "malware"
+      ],
       "cves": []
     },
     {
@@ -191,6 +340,18 @@
       "source": "The Register Security",
       "source_id": "theregister",
       "category": "News",
+      "tags": [],
+      "cves": []
+    },
+    {
+      "title": "From help desk impersonation to AD CS abuse: Investigating ESC1 and ESC8 intrusion paths",
+      "link": "https://www.microsoft.com/en-us/security/blog/2026/10/30/help-desk-impersonation-ad-cs-abuse-investigating-esc1-esc8-intrusion-paths",
+      "summary": "Teams support impersonation led to remote access, malicious runtime execution, and Certificate Services abuse through authentication relay and Kerberos. The post From help desk impersonation to AD CS abuse: Investigating ESC1 and ESC8 intrusion paths appeared first on Microsoft Security Blog .",
+      "published": "2026-10-30T16:11:44+00:00",
+      "image": null,
+      "source": "Microsoft Security Blog",
+      "source_id": "msrc",
+      "category": "Vendor",
       "tags": [],
       "cves": []
     },
@@ -646,20 +807,6 @@
       ]
     },
     {
-      "title": "$6 Billion Binance Hack Bears Hallmarks of North Korea’s TraderTraitor",
-      "link": "https://www.securityweek.com/6-billion-binance-hack-bears-hallmarks-of-north-koreas-tradertraitor",
-      "summary": "Blockchain analysts link the record crypto theft to North Korean hackers, as Binance probes a possibly compromised engineer laptop. The post $6 Billion Binance Hack Bears Hallmarks of North Korea’s TraderTraitor appeared first on SecurityWeek .",
-      "published": "2026-10-30T08:16:26+00:00",
-      "image": null,
-      "source": "SecurityWeek",
-      "source_id": "securityweek",
-      "category": "News",
-      "tags": [
-        "nation-state"
-      ],
-      "cves": []
-    },
-    {
       "title": "As Russia's Cyberwar Evolves, Belarus Steps Forward",
       "link": "https://www.darkreading.com/physical-security/russia-cyber-war-belarus-steps-forward",
       "summary": "The \"FrostyNeighbor\" advanced persistent threat (APT) launched a destructive attack in Ukraine and is raising concerns about deeper alignment with Russian cyber objectives.",
@@ -959,18 +1106,6 @@
       "cves": []
     },
     {
-      "title": "Fake crypto app on Apple App Store linked to $23K wallet theft",
-      "link": "https://www.bleepingcomputer.com/news/security/fake-crypto-app-on-apple-app-store-linked-to-23k-wallet-theft",
-      "summary": "A fake cryptocurrency trading app called Padre Terminal, previously available on the Apple App Store for iOS devices, has been linked to the theft of approximately $23,000 from 27 Solana wallets. [...]",
-      "published": "2026-10-29T19:23:41+00:00",
-      "image": null,
-      "source": "BleepingComputer",
-      "source_id": "bleepingcomputer",
-      "category": "News",
-      "tags": [],
-      "cves": []
-    },
-    {
       "title": "ThreatsDay: Critical Firewall Flaws, Banking Trojans Rented, Weaponized PDF, Token Theft + 26 More Stories",
       "link": "https://thehackernews.com/2026/10/threatsday-critical-firewall-flaws.html",
       "summary": "Some attacks take real skill. Others just need someone to leave a door open. This week has both. Exposed passwords, old bugs still getting exploited, and trusted software doing things it shouldn't. There's a strange mix of clever tricks and careless mistakes. Hackers are borrowing trust from familiar apps, websites, an",
@@ -1011,24 +1146,6 @@
       "category": "News",
       "tags": [],
       "cves": []
-    },
-    {
-      "title": "Hackers exploit Cisco SD-WAN flaw to deploy custom KeyDrift malware",
-      "link": "https://www.bleepingcomputer.com/news/security/hackers-exploit-cisco-sd-wan-flaw-to-deploy-custom-keydrift-malware",
-      "summary": "A newly identified advanced persistent threat (APT) group tracked as UAT-11473 was observed exploiting CVE-2026-20127, an authentication-bypass flaw in Cisco Catalyst SD-WAN Controllers, to deploy a custom malware framework called KeyDrift. [...]",
-      "published": "2026-10-29T18:38:26+00:00",
-      "image": null,
-      "source": "BleepingComputer",
-      "source_id": "bleepingcomputer",
-      "category": "News",
-      "tags": [
-        "malware",
-        "vulnerability",
-        "nation-state"
-      ],
-      "cves": [
-        "CVE-2026-20127"
-      ]
     },
     {
       "title": "Claude Model Builds Exploits Across Major Browsers & OSes",
@@ -1086,6 +1203,30 @@
         "vulnerability",
         "cloud"
       ],
+      "cves": []
+    },
+    {
+      "title": "Tracking AI adoption in North Korean threat actor tradecraft",
+      "link": "https://www.microsoft.com/en-us/security/blog/2026/10/29/tracking-ai-adoption-in-north-korean-threat-actor-tradecraft",
+      "summary": "As Microsoft Threat Intelligence continues to track how threat actors operationalize AI to increase the speed and efficiency of attacks, we’ve identified North Korean threat actors expanding their use of AI with varying levels of adoption. This blog breaks down how North Korean threat actors are utilizing AI across the",
+      "published": "2026-10-29T16:00:00+00:00",
+      "image": null,
+      "source": "Microsoft Security Blog",
+      "source_id": "msrc",
+      "category": "Vendor",
+      "tags": [],
+      "cves": []
+    },
+    {
+      "title": "IDC MarketScape names Microsoft a Leader in the 2026 Worldwide Modern Endpoint Security for Enterprises Vendor Assessment",
+      "link": "https://www.microsoft.com/en-us/security/blog/2026/10/29/idc-marketscape-names-microsoft-a-leader-in-the-2026-worldwide-modern-endpoint-security-for-enterprises-vendor-assessment",
+      "summary": "IDC has named Microsoft a Leader in the 2026 IDC MarketScape for Worldwide Modern Endpoint Security for Enterprises. The post IDC MarketScape names Microsoft a Leader in the 2026 Worldwide Modern Endpoint Security for Enterprises Vendor Assessment appeared first on Microsoft Security Blog .",
+      "published": "2026-10-29T16:00:00+00:00",
+      "image": null,
+      "source": "Microsoft Security Blog",
+      "source_id": "msrc",
+      "category": "Vendor",
+      "tags": [],
       "cves": []
     },
     {
@@ -1285,21 +1426,6 @@
       "cves": [
         "CVE-2026-76418"
       ]
-    },
-    {
-      "title": "Volt Typhoon Used Silent Train to Hide Zero-Day Attacks",
-      "link": "https://securityaffairs.com/202023/intelligence/volt-typhoon-used-silent-train-to-hide-zero-day-attacks.html",
-      "summary": "Volt Typhoon used disposable relay chains to hide zero-day attacks on critical systems. Lumen linked Silent Train to at least four zero-days. Lumen’s Black Lotus Labs has spent three years tracking a covert network it calls Silent Train, which it ties to Volt Typhoon, the China-linked APT group. The cybersecurity firm ",
-      "published": "2026-10-29T10:34:54+00:00",
-      "image": null,
-      "source": "Security Affairs",
-      "source_id": "securityaffairs",
-      "category": "News",
-      "tags": [
-        "vulnerability",
-        "nation-state"
-      ],
-      "cves": []
     },
     {
       "title": "GitHub Launches npm Firewall to Block Malicious Packages Before Installation",
@@ -1623,6 +1749,18 @@
       "cves": []
     },
     {
+      "title": "The CISO’s evolving role: Protecting and defending in the agentic era",
+      "link": "https://www.microsoft.com/en-us/security/blog/2026/10/28/the-cisos-evolving-role-protecting-and-defending-in-the-agentic-era",
+      "summary": "As AI and agents reshape the enterprise, CISOs face two critical priorities: enabling innovation with the right identity and data guardrails, and modernizing defense to keep pace with AI-powered threats. Aarti Borkar shares how security leaders can approach both. The post The CISO’s evolving role: Protecting and defend",
+      "published": "2026-10-28T16:00:00+00:00",
+      "image": null,
+      "source": "Microsoft Security Blog",
+      "source_id": "msrc",
+      "category": "Vendor",
+      "tags": [],
+      "cves": []
+    },
+    {
       "title": "Serial ransomware crook gets 70 months behind bars for Nefilim, Hive roles",
       "link": "https://www.theregister.com/cyber-crime/2026/10/28/serial-ransomware-crook-gets-70-months-behind-bars-for-nefilim-hive-roles/5306050",
       "summary": "Artem Stryzhak joined both gangs, which targeted businesses and a hospital during the pandemic",
@@ -1835,37 +1973,6 @@
         "data breach"
       ],
       "cves": []
-    },
-    {
-      "title": "Tailscale Patches SSH Flaws That Could Let Hacked Devices Gain Root Access on Other Servers",
-      "link": "https://thehackernews.com/2026/10/tailscale-patches-ssh-flaws-that-could.html",
-      "summary": "Tailscale has released version 1.104.4 to fix flaws in its built-in SSH server that could let an attacker reach services and files on other servers that only the root user should be able to touch. The flaws are in how Tailscale SSH forwards network connections, a job the Tailscale background process carries out with ro",
-      "published": "2026-10-28T06:20:37+00:00",
-      "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi4t7YUY-idhgGJFpEuulM5zELQR4QNB-UKmsh7cyB5cdMH4AU_zumf3K27WBWgAw6ra28TvALm5fFeLrV_1wHJXeYy3azE1TcblP-1JSCPLF3mq-WKjUOXy3K-pfjhHtiwGkCoYhxfEMZGielHz2Bit6mLoNlnElmauP0RNcbXelNkAHIWI4s92qrymUQ/s1600/tailscale-patches.jpg",
-      "source": "The Hacker News",
-      "source_id": "thehackernews",
-      "category": "News",
-      "tags": [
-        "cloud"
-      ],
-      "cves": []
-    },
-    {
-      "title": "ShinyHunters-Exploited Oracle PeopleSoft Zero-Day Turns Out to Be Three Chained Flaws",
-      "link": "https://thehackernews.com/2026/10/shinyhunters-exploited-oracle.html",
-      "summary": "The critical Oracle PeopleSoft bug that ShinyHunters has exploited since May is not one flaw but three chained together, the researchers who reported it said this week. Oracle patched all three under a single identifier, CVE-2026-35273, in June. Its root is a server-side request forgery (SSRF) that reaches an internal ",
-      "published": "2026-10-28T06:04:58+00:00",
-      "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgiU-iVEycp9z-2dprGJhgl046M9ZvG7kGGwaXNzgFJg7XDubOoWWLvEuKAOczIcGuXU04db46Xa6pRMKO36ZS7Fu8Xkv7mNuPjHUS0zLTHkGlNWNRD2DLCznPf6jqvqamZSZGMBXSzh9gMYm-9sR-y7OgN7i7n6x0dfYxyl9QftWlfuQw0mpTteHy57k/s1600/sh.jpg",
-      "source": "The Hacker News",
-      "source_id": "thehackernews",
-      "category": "News",
-      "tags": [
-        "vulnerability",
-        "cloud"
-      ],
-      "cves": [
-        "CVE-2026-35273"
-      ]
     },
     {
       "title": "Third Serengeti Sweep Tops 1,400 Arrests as Investigations Mature",
@@ -2440,18 +2547,6 @@
       "cves": []
     },
     {
-      "title": "Looking for a Language [Guest Diary], (Wed, Oct 21st)",
-      "link": "https://isc.sans.edu/diary/rss/33442",
-      "summary": "[This is a Guest Diary by Jeffray Spence, an ISC intern as part of the SANS.edu BACS program]",
-      "published": "2026-10-26T09:38:03+00:00",
-      "image": null,
-      "source": "SANS Internet Storm Center",
-      "source_id": "sans_isc",
-      "category": "Research",
-      "tags": [],
-      "cves": []
-    },
-    {
       "title": "PHP2Shell: No login, no app code, no warning. What next?",
       "link": "https://www.theregister.com/security/2026/10/26/partner-content-no-login-no-app-code-no-warning-what-next/5305336",
       "summary": "PARTNER CONTENT: Learn what the flaws are, how far exploitation has gone, and how to get to full coverage fast with Tanium",
@@ -2493,18 +2588,6 @@
       "cves": []
     },
     {
-      "title": "ISC Stormcast For Monday, October 26th, 2026 https://isc.sans.edu/podcastdetail/10150, (Mon, Oct 26th)",
-      "link": "https://isc.sans.edu/diary/rss/33456",
-      "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
-      "published": "2026-10-26T03:30:12+00:00",
-      "image": null,
-      "source": "SANS Internet Storm Center",
-      "source_id": "sans_isc",
-      "category": "Research",
-      "tags": [],
-      "cves": []
-    },
-    {
       "title": "The breachpocalypse is here",
       "link": "https://www.sophos.com/en-us/blog/the-breachpocalypse-is-here",
       "summary": "It's just hard to measure",
@@ -2516,18 +2599,6 @@
       "tags": [
         "data breach"
       ],
-      "cves": []
-    },
-    {
-      "title": "YARA-X 1.22.0 Release, (Sun, Oct 25th)",
-      "link": "https://isc.sans.edu/diary/rss/33454",
-      "summary": "YARA-X&#;x26;#;39;s 1.22.0 release brings 11 improvements and 9 bugfixes.",
-      "published": "2026-10-25T19:57:53+00:00",
-      "image": null,
-      "source": "SANS Internet Storm Center",
-      "source_id": "sans_isc",
-      "category": "Research",
-      "tags": [],
       "cves": []
     },
     {
@@ -2604,6 +2675,18 @@
       "source": "The Register Security",
       "source_id": "theregister",
       "category": "News",
+      "tags": [],
+      "cves": []
+    },
+    {
+      "title": "Inside the LiteLLM 1.107.0 supply chain compromise: Credential theft through Python startup hooks",
+      "link": "https://www.microsoft.com/en-us/security/blog/2026/10/23/inside-the-litellm-1-107-0-supply-chain-compromise-credential-theft-through-python-startup-hooks",
+      "summary": "Microsoft Threat Intelligence analyzes the LiteLLM 1.107.0 compromise, including Python startup hooks, credential theft, remote code loading, detections, and mitigations. The post Inside the LiteLLM 1.107.0 supply chain compromise: Credential theft through Python startup hooks appeared first on Microsoft Security Blog ",
+      "published": "2026-10-23T18:12:19+00:00",
+      "image": null,
+      "source": "Microsoft Security Blog",
+      "source_id": "msrc",
+      "category": "Vendor",
       "tags": [],
       "cves": []
     },
@@ -2986,6 +3069,20 @@
       "cves": []
     },
     {
+      "title": "AI-driven, large-scale nation-state campaign using ARTEX enables supply chain compromise",
+      "link": "https://www.microsoft.com/en-us/security/blog/2026/10/21/storm-0940-uses-artex-agentic-ai-connectwise-supply-chain-compromise",
+      "summary": "Storm-0940 used ARTEX agentic AI to accelerate a ConnectWise supply chain compromise, enabling application credential abuse across Microsoft 365 environments. The post AI-driven, large-scale nation-state campaign using ARTEX enables supply chain compromise appeared first on Microsoft Security Blog .",
+      "published": "2026-10-21T18:23:55+00:00",
+      "image": null,
+      "source": "Microsoft Security Blog",
+      "source_id": "msrc",
+      "category": "Vendor",
+      "tags": [
+        "nation-state"
+      ],
+      "cves": []
+    },
+    {
       "title": "Widespread PHP Flaw May Cause Many Site Outages Today",
       "link": "https://krebsonsecurity.com/2026/10/widespread-php-flaw-may-cause-many-site-outages-today",
       "summary": "Expect to see quite a few websites serving \"404\" or \"Page Not Found\" errors today: Nearly 70 percent of websites need to update their core software to fix a pair of vulnerabilities that allow an attacker to seize full control over affected servers. Experts say there are working exploits for the flaws, and that these cr",
@@ -3143,6 +3240,20 @@
       "cves": []
     },
     {
+      "title": "Agents are your newest insiders. Security must move at their speed.",
+      "link": "https://www.microsoft.com/en-us/security/blog/2026/10/19/agents-are-your-newest-insiders-security-must-move-at-their-speed",
+      "summary": "New capabilities in Microsoft 365 E7 and Project Perception help organizations contain agent risk and adapt protection continuously. The post Agents are your newest insiders. Security must move at their speed. appeared first on Microsoft Security Blog .",
+      "published": "2026-10-19T13:00:00+00:00",
+      "image": null,
+      "source": "Microsoft Security Blog",
+      "source_id": "msrc",
+      "category": "Vendor",
+      "tags": [
+        "nation-state"
+      ],
+      "cves": []
+    },
+    {
       "title": "Top 5 Initial Access Threat Vectors Observed by Unit 42 in September 2026",
       "link": "https://unit42.paloaltonetworks.com/top-5-initial-access-vectors-september-2026",
       "summary": "Unit 42 details the top initial access vectors adversaries use to breach organizations, led by edge exploits, credential abuse and phishing The post Top 5 Initial Access Threat Vectors Observed by Unit 42 in September 2026 appeared first on Unit 42 .",
@@ -3156,6 +3267,18 @@
         "vulnerability",
         "data breach"
       ],
+      "cves": []
+    },
+    {
+      "title": "Managing open-weight model risk in enterprise deployments",
+      "link": "https://www.microsoft.com/en-us/security/blog/2026/10/16/managing-open-weight-model-risk-in-enterprise-deployments",
+      "summary": "New whitepaper from Microsoft and NVIDIA helps enterprises manage open-weight AI model risks with a shared taxonomy, evaluations, and controls. The post Managing open-weight model risk in enterprise deployments appeared first on Microsoft Security Blog .",
+      "published": "2026-10-16T16:00:00+00:00",
+      "image": null,
+      "source": "Microsoft Security Blog",
+      "source_id": "msrc",
+      "category": "Vendor",
+      "tags": [],
       "cves": []
     },
     {
@@ -3231,6 +3354,20 @@
       "cves": []
     },
     {
+      "title": "The hidden network: Inside the phishing infrastructure ecosystem powering global cybercrime",
+      "link": "https://www.microsoft.com/en-us/security/blog/2026/10/14/the-hidden-network-inside-the-phishing-infrastructure-ecosystem-powering-global-cybercrime",
+      "summary": "Microsoft uncovered a Chinese-language cybercriminal ecosystem, an interconnected network of phishing kit operators (tracked as Storm-2990), and an illicit marketplace (tracked as Storm-3119) selling tools and infrastructure for large-scale phishing. In collaboration with law enforcement agencies and other partners wor",
+      "published": "2026-10-14T13:00:00+00:00",
+      "image": null,
+      "source": "Microsoft Security Blog",
+      "source_id": "msrc",
+      "category": "Vendor",
+      "tags": [
+        "phishing"
+      ],
+      "cves": []
+    },
+    {
       "title": "Microsoft Patches More Than 1,400 Security Flaws",
       "link": "https://krebsonsecurity.com/2026/10/microsoft-patches-more-than-1400-security-flaws",
       "summary": "Microsoft today issued updates to fix more than 1,400 security vulnerabilities in its Windows operating systems and other software. Today's epic patch batch dwarfs September's record of nearly 1,000 fixes, which was already about ten times the normal monthly patch load from Redmond.",
@@ -3283,18 +3420,6 @@
       "cves": []
     },
     {
-      "title": "Post-quantum authentication: Why organizations should start testing certificate ecosystems now",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/10/08/post-quantum-authentication-why-organizations-should-start-testing-certificate-ecosystems-now",
-      "summary": "Prepare for post-quantum authentication by testing certificate ecosystems now. Learn how Microsoft’s PQC TLS Pilot Program helps advance future readiness. The post Post-quantum authentication: Why organizations should start testing certificate ecosystems now appeared first on Microsoft Security Blog .",
-      "published": "2026-10-08T20:44:28+00:00",
-      "image": null,
-      "source": "Microsoft Security Blog",
-      "source_id": "msrc",
-      "category": "Vendor",
-      "tags": [],
-      "cves": []
-    },
-    {
       "title": "Making sure the checks get printed",
       "link": "https://blog.talosintelligence.com/making-sure-the-checks-get-printed",
       "summary": "Pierre's debut newsletter explores the messy, real-world side of risk management and how to keep vital systems running when a perfect patch isn't an option.",
@@ -3304,21 +3429,6 @@
       "source_id": "talos",
       "category": "Research",
       "tags": [],
-      "cves": []
-    },
-    {
-      "title": "UAT-11985: AI-assisted event lures delivering real-time Google AitM phishing",
-      "link": "https://blog.talosintelligence.com/uat-11985",
-      "summary": "Cisco Talos identified an APT spear-phishing campaign against individuals affiliated with Taiwan research organizations. The operation leveraged legitimate public event themes and impersonated reputable academic and policy institutions.",
-      "published": "2026-10-08T10:01:06+00:00",
-      "image": null,
-      "source": "Cisco Talos",
-      "source_id": "talos",
-      "category": "Research",
-      "tags": [
-        "phishing",
-        "nation-state"
-      ],
       "cves": []
     },
     {
@@ -3336,20 +3446,6 @@
       "cves": []
     },
     {
-      "title": "3 lessons from frontier AI vulnerability research",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/10/07/3-lessons-from-frontier-ai-vulnerability-research",
-      "summary": "Read how How Microsoft Security's FORGE Lab is scaling vulnerability research from Windows to the Linux kernel. The post 3 lessons from frontier AI vulnerability research appeared first on Microsoft Security Blog .",
-      "published": "2026-10-07T16:00:00+00:00",
-      "image": null,
-      "source": "Microsoft Security Blog",
-      "source_id": "msrc",
-      "category": "Vendor",
-      "tags": [
-        "vulnerability"
-      ],
-      "cves": []
-    },
-    {
       "title": "ShinyHunters Extorted Boeing Spin-off Prior to Arrests",
       "link": "https://krebsonsecurity.com/2026/10/shinyhunters-extorted-boeing-spin-off-prior-to-arrests",
       "summary": "A teenager from Amman, Jordan suspected of leading the prolific data theft and extortion group ShinyHunters has been detained and is reportedly cooperating with the FBI to identify other members of the hacking gang. KrebsOnSecurity has learned that the suspect, who uses the hacker handle \"Rey,\" was detained as ShinyHun",
@@ -3359,20 +3455,6 @@
       "source_id": "krebsonsecurity",
       "category": "News",
       "tags": [],
-      "cves": []
-    },
-    {
-      "title": "CISO perspectives on managing vulnerability risks in the age of AI",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/10/06/ciso-perspectives-on-managing-vulnerability-risks-in-the-age-of-ai",
-      "summary": "Learn how CISOs can mitigate cybersecurity risks and increase resilience in the age of AI-powered vulnerability management. The post CISO perspectives on managing vulnerability risks in the age of AI appeared first on Microsoft Security Blog .",
-      "published": "2026-10-06T16:00:00+00:00",
-      "image": null,
-      "source": "Microsoft Security Blog",
-      "source_id": "msrc",
-      "category": "Vendor",
-      "tags": [
-        "vulnerability"
-      ],
       "cves": []
     },
     {
@@ -3403,30 +3485,6 @@
       "cves": []
     },
     {
-      "title": "Preparing governments for an era of interconnected cyber risk",
-      "link": "https://blogs.microsoft.com/on-the-issues/2026/10/01/preparing-governments-for-an-era-of-interconnected-cyber-risk",
-      "summary": "According to this year’s Microsoft Digital Defense Report, government agencies and services were the sector most impacted by cyber threats in 2026, accounting for 27% of observed activity, up from 17% in 2025. The post Preparing governments for an era of interconnected cyber risk appeared first on Microsoft Security Bl",
-      "published": "2026-10-01T14:00:00+00:00",
-      "image": null,
-      "source": "Microsoft Security Blog",
-      "source_id": "msrc",
-      "category": "Vendor",
-      "tags": [],
-      "cves": []
-    },
-    {
-      "title": "Insights from the 2026 Microsoft Digital Defense Report",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/10/01/insights-from-the-2026-microsoft-digital-defense-report",
-      "summary": "Read highlights from the 2026 Microsoft Digital Defense Report, which reflects a security environment that continues to grow more interconnected. The post Insights from the 2026 Microsoft Digital Defense Report appeared first on Microsoft Security Blog .",
-      "published": "2026-10-01T14:00:00+00:00",
-      "image": null,
-      "source": "Microsoft Security Blog",
-      "source_id": "msrc",
-      "category": "Vendor",
-      "tags": [],
-      "cves": []
-    },
-    {
       "title": "Threat Brief: NetScaler Zero Days CVE-2026-88771 and CVE-2026-88772 Exploited in the Wild (Updated September 30)",
       "link": "https://unit42.paloaltonetworks.com/netscaler-zero-days-exploited",
       "summary": "Unit 42 is aware of possible 0-day activity against NetScaler devices. Citrix reports CVE-2026-88771, CVE-2026-88772 have been exploited in the wild. The post Threat Brief: NetScaler Zero Days CVE-2026-88771 and CVE-2026-88772 Exploited in the Wild (Updated September 30) appeared first on Unit 42 .",
@@ -3442,75 +3500,6 @@
         "CVE-2026-88771",
         "CVE-2026-88772"
       ]
-    },
-    {
-      "title": "​​Secure what’s next: Your guide to Microsoft Security at Microsoft Ignite 2026",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/09/30/secure-whats-next-your-guide-to-microsoft-security-at-microsoft-ignite-2026",
-      "summary": "This year at Microsoft Ignite, we spotlight our AI-first, end-to-end security platform designed to protect identities, devices, data, applications, clouds, infrastructure, and the AI agents now working alongside your teams. The post ​​Secure what’s next: Your guide to Microsoft Security at Microsoft Ignite 2026 appeare",
-      "published": "2026-09-30T19:31:00+00:00",
-      "image": null,
-      "source": "Microsoft Security Blog",
-      "source_id": "msrc",
-      "category": "Vendor",
-      "tags": [],
-      "cves": []
-    },
-    {
-      "title": "Unauthenticated command injection on internet-facing mail servers: tracking CVE-2026-73570",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/09/30/unauthenticated-command-injection-on-internet-facing-mail-servers-tracking-cve-2026-73570",
-      "summary": "Microsoft Threat Intelligence examines CVE-2026-73570 exploitation in Zimbra, including observed attack paths, detection opportunities, and mitigation guidance. The post Unauthenticated command injection on internet-facing mail servers: tracking CVE-2026-73570 appeared first on Microsoft Security Blog .",
-      "published": "2026-09-30T14:00:00+00:00",
-      "image": null,
-      "source": "Microsoft Security Blog",
-      "source_id": "msrc",
-      "category": "Vendor",
-      "tags": [
-        "vulnerability"
-      ],
-      "cves": [
-        "CVE-2026-73570"
-      ]
-    },
-    {
-      "title": "Phishing Abuses RMM Tools for Persistent Access",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/09/29/phishing-abuses-rmm-tools-persistent-access",
-      "summary": "Microsoft observed phishing campaigns that abused MSP360 RMM to deploy ScreenConnect, creating redundant remote-access channels for follow-on activity The post Phishing Abuses RMM Tools for Persistent Access appeared first on Microsoft Security Blog .",
-      "published": "2026-09-29T21:39:27+00:00",
-      "image": null,
-      "source": "Microsoft Security Blog",
-      "source_id": "msrc",
-      "category": "Vendor",
-      "tags": [
-        "phishing"
-      ],
-      "cves": []
-    },
-    {
-      "title": "​​Beyond source code: A path to the keys to the kingdom",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/09/29/beyond-source-code-a-path-to-the-keys-to-the-kingdom",
-      "summary": "Explore how Storm-3068 turned a compromised identity into broader cloud access and the steps organizations can take to defend their identities, pipelines, and cloud infrastructure. The post ​​Beyond source code: A path to the keys to the kingdom appeared first on Microsoft Security Blog .",
-      "published": "2026-09-29T16:00:00+00:00",
-      "image": null,
-      "source": "Microsoft Security Blog",
-      "source_id": "msrc",
-      "category": "Vendor",
-      "tags": [],
-      "cves": []
-    },
-    {
-      "title": "Star Blizzard refines phishing and malware delivery with the RedFlick technique",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/09/29/star-blizzard-refines-phishing-and-malware-delivery-with-the-redflick-technique",
-      "summary": "Since January 2026, Microsoft has observed Russian state threat actor Star Blizzard evolve their detection evasion capabilities through large-scale phishing campaigns, the use of accounts on compromised websites, and a novel malware delivery technique, tracked by Microsoft as “RedFlick”. The post Star Blizzard refines ",
-      "published": "2026-09-29T15:00:00+00:00",
-      "image": null,
-      "source": "Microsoft Security Blog",
-      "source_id": "msrc",
-      "category": "Vendor",
-      "tags": [
-        "malware",
-        "phishing"
-      ],
-      "cves": []
     },
     {
       "title": "OperTraitors: How Kubernetes Operators Betray Your Security Posture",
@@ -3702,7 +3691,7 @@
       "ok": true,
       "count": 40,
       "error": null,
-      "fetched_at": "2026-10-31T06:56:29.184300+00:00"
+      "fetched_at": "2026-10-31T13:26:51.979736+00:00"
     },
     {
       "id": "bleepingcomputer",
@@ -3710,7 +3699,7 @@
       "ok": true,
       "count": 15,
       "error": null,
-      "fetched_at": "2026-10-31T06:56:29.460919+00:00"
+      "fetched_at": "2026-10-31T13:26:52.248601+00:00"
     },
     {
       "id": "krebsonsecurity",
@@ -3718,7 +3707,7 @@
       "ok": true,
       "count": 10,
       "error": null,
-      "fetched_at": "2026-10-31T06:56:29.556479+00:00"
+      "fetched_at": "2026-10-31T13:26:52.374645+00:00"
     },
     {
       "id": "darkreading",
@@ -3726,7 +3715,7 @@
       "ok": true,
       "count": 40,
       "error": null,
-      "fetched_at": "2026-10-31T06:56:29.783185+00:00"
+      "fetched_at": "2026-10-31T13:26:52.509454+00:00"
     },
     {
       "id": "securityweek",
@@ -3734,7 +3723,7 @@
       "ok": true,
       "count": 10,
       "error": null,
-      "fetched_at": "2026-10-31T06:56:30.204113+00:00"
+      "fetched_at": "2026-10-31T13:26:52.941060+00:00"
     },
     {
       "id": "schneier",
@@ -3742,7 +3731,7 @@
       "ok": true,
       "count": 10,
       "error": null,
-      "fetched_at": "2026-10-31T06:56:30.324084+00:00"
+      "fetched_at": "2026-10-31T13:26:53.075649+00:00"
     },
     {
       "id": "sophosnews",
@@ -3750,7 +3739,7 @@
       "ok": true,
       "count": 9,
       "error": null,
-      "fetched_at": "2026-10-31T06:56:30.494413+00:00"
+      "fetched_at": "2026-10-31T13:26:53.188425+00:00"
     },
     {
       "id": "cisa",
@@ -3758,7 +3747,7 @@
       "ok": false,
       "count": 0,
       "error": "HTTPError: HTTP Error 403: Forbidden",
-      "fetched_at": "2026-10-31T06:56:30.659699+00:00"
+      "fetched_at": "2026-10-31T13:26:53.455986+00:00"
     },
     {
       "id": "msrc",
@@ -3766,7 +3755,7 @@
       "ok": true,
       "count": 10,
       "error": null,
-      "fetched_at": "2026-10-31T06:56:36.977230+00:00"
+      "fetched_at": "2026-10-31T13:26:59.705788+00:00"
     },
     {
       "id": "talos",
@@ -3774,7 +3763,7 @@
       "ok": true,
       "count": 15,
       "error": null,
-      "fetched_at": "2026-10-31T06:56:37.111501+00:00"
+      "fetched_at": "2026-10-31T13:26:59.914324+00:00"
     },
     {
       "id": "unit42",
@@ -3782,7 +3771,7 @@
       "ok": true,
       "count": 15,
       "error": null,
-      "fetched_at": "2026-10-31T06:56:37.247167+00:00"
+      "fetched_at": "2026-10-31T13:27:00.078271+00:00"
     },
     {
       "id": "crowdstrike",
@@ -3790,7 +3779,7 @@
       "ok": true,
       "count": 10,
       "error": null,
-      "fetched_at": "2026-10-31T06:56:37.514344+00:00"
+      "fetched_at": "2026-10-31T13:27:00.187135+00:00"
     },
     {
       "id": "therecord",
@@ -3798,7 +3787,7 @@
       "ok": true,
       "count": 5,
       "error": null,
-      "fetched_at": "2026-10-31T06:56:37.930451+00:00"
+      "fetched_at": "2026-10-31T13:27:00.565117+00:00"
     },
     {
       "id": "sans_isc",
@@ -3806,7 +3795,7 @@
       "ok": true,
       "count": 10,
       "error": null,
-      "fetched_at": "2026-10-31T06:56:38.315444+00:00"
+      "fetched_at": "2026-10-31T13:27:00.781553+00:00"
     },
     {
       "id": "theregister",
@@ -3814,7 +3803,7 @@
       "ok": true,
       "count": 40,
       "error": null,
-      "fetched_at": "2026-10-31T06:56:38.565360+00:00"
+      "fetched_at": "2026-10-31T13:27:01.015049+00:00"
     },
     {
       "id": "projectzero",
@@ -3822,7 +3811,7 @@
       "ok": true,
       "count": 10,
       "error": null,
-      "fetched_at": "2026-10-31T06:56:39.538679+00:00"
+      "fetched_at": "2026-10-31T13:27:02.431293+00:00"
     },
     {
       "id": "malwarebytes",
@@ -3830,7 +3819,7 @@
       "ok": true,
       "count": 20,
       "error": null,
-      "fetched_at": "2026-10-31T06:56:39.948959+00:00"
+      "fetched_at": "2026-10-31T13:27:02.758600+00:00"
     },
     {
       "id": "securityaffairs",
@@ -3838,7 +3827,7 @@
       "ok": true,
       "count": 10,
       "error": null,
-      "fetched_at": "2026-10-31T06:56:40.054753+00:00"
+      "fetched_at": "2026-10-31T13:27:02.894057+00:00"
     }
   ]
 }
