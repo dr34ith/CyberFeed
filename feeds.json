@@ -1,16 +1,46 @@
 {
-  "generated_at": "2026-10-31T13:27:03.592265+00:00",
+  "generated_at": "2026-10-31T17:52:44.415445+00:00",
   "items": [
     {
-      "title": "From Beginner to Bug Hunter: Learning Cybersecurity in the AI Era.",
-      "link": "https://www.bleepingcomputer.com/news/security/from-beginner-to-bug-hunter-learning-cybersecurity-in-the-ai-era",
-      "summary": "[...]",
-      "published": "2026-10-31T13:10:19+00:00",
+      "title": "New Android SMS of Death exploit can remotely crash unpatched phones",
+      "link": "https://www.bleepingcomputer.com/news/security/new-android-sms-of-death-exploit-can-remotely-crash-unpatched-phones",
+      "summary": "A security researcher has released a proof-of-concept exploit for a recently patched Android vulnerability, dubbed \"SMS of Death\" and tracked as CVE-2026-58882, that lets attackers remotely disrupt cellular service or crash phones by sending a specially crafted text message. [...]",
+      "published": "2026-10-31T15:35:11+00:00",
+      "image": null,
+      "source": "BleepingComputer",
+      "source_id": "bleepingcomputer",
+      "category": "News",
+      "tags": [
+        "vulnerability"
+      ],
+      "cves": [
+        "CVE-2026-58882"
+      ]
+    },
+    {
+      "title": "Reddit to lock content behind logins to fight scrapers",
+      "link": "https://www.bleepingcomputer.com/news/security/reddit-to-lock-content-behind-logins-to-fight-scrapers",
+      "summary": "Reddit announced in a post by co-founder Steve Huffman that the site will gradually become a \"logged-in service,\" offering limited access to visitors without accounts. [...]",
+      "published": "2026-10-31T14:05:15+00:00",
       "image": null,
       "source": "BleepingComputer",
       "source_id": "bleepingcomputer",
       "category": "News",
       "tags": [],
+      "cves": []
+    },
+    {
+      "title": "From Beginner to Bug Hunter: Learning Cybersecurity in the AI Era.",
+      "link": "https://www.bleepingcomputer.com/news/security/from-beginner-to-bug-hunter-learning-cybersecurity-in-the-ai-era",
+      "summary": "AI-generated vulnerability reports are overwhelming some bug bounty programs, making it harder for aspiring security researchers to know where to start. TryHackMe explains how beginners can build practical cybersecurity skills, use AI responsibly, and produce reproducible findings that stand up to scrutiny. [...]",
+      "published": "2026-10-31T13:10:19+00:00",
+      "image": null,
+      "source": "BleepingComputer",
+      "source_id": "bleepingcomputer",
+      "category": "News",
+      "tags": [
+        "vulnerability"
+      ],
       "cves": []
     },
     {
@@ -1024,20 +1054,6 @@
       "cves": []
     },
     {
-      "title": "Japan Airlines suffers third-party data breach exposing passenger info",
-      "link": "https://www.bleepingcomputer.com/news/security/japan-airlines-suffers-third-party-data-breach-exposing-passenger-info",
-      "summary": "Japan Airlines (JAL) has announced that a data breach at Amadeus's Passenger Service System exposed the data of about 92,000 customers. [...]",
-      "published": "2026-10-29T22:08:04+00:00",
-      "image": null,
-      "source": "BleepingComputer",
-      "source_id": "bleepingcomputer",
-      "category": "News",
-      "tags": [
-        "data breach"
-      ],
-      "cves": []
-    },
-    {
       "title": "US Probes Suspected Hack Behind Military Base Freezer Failures",
       "link": "https://securityaffairs.com/202073/hacking/us-probes-suspected-hack-behind-military-base-freezer-failures.html",
       "summary": "The Pentagon treats August freezer failures at US military bases as a suspected hack and is working with French investigators after a supermarket attack. The Pentagon is investigating freezer failures that spoiled food at US military bases in August as a suspected cyberattack, according to four officials who spoke to R",
@@ -1047,20 +1063,6 @@
       "source_id": "securityaffairs",
       "category": "News",
       "tags": [],
-      "cves": []
-    },
-    {
-      "title": "Polymarket halts trading after crypto-draining script breach, $2.5M traced",
-      "link": "https://www.bleepingcomputer.com/news/security/polymarket-halts-trading-after-crypto-draining-script-breach-25m-traced",
-      "summary": "Prediction market platform Polymarket temporarily suspended trading on Thursday after hackers compromised a third-party service to distribute cryptocurrency-draining JavaScript, with approximately $2.5 million in assets traced to a suspected attacker wallet. [...]",
-      "published": "2026-10-29T21:47:25+00:00",
-      "image": null,
-      "source": "BleepingComputer",
-      "source_id": "bleepingcomputer",
-      "category": "News",
-      "tags": [
-        "data breach"
-      ],
       "cves": []
     },
     {
@@ -2023,18 +2025,6 @@
       "cves": []
     },
     {
-      "title": "Never Bring a Knife to a Gun Fight!",
-      "link": "https://www.sophos.com/en-us/blog/never-bring-a-knife-to-a-gun-fight",
-      "summary": "Cyber incidents create both technical and legal challenges, making coordination between DFIR teams and experienced legal counsel essential. This article explores why organizations should establish these relationships before an incident occurs and how a coordinated response can improve forensic investigations, regulator",
-      "published": "2026-10-28T00:00:00+00:00",
-      "image": null,
-      "source": "Sophos News",
-      "source_id": "sophosnews",
-      "category": "Vendor",
-      "tags": [],
-      "cves": []
-    },
-    {
       "title": "‘Node2Shell’ vulnerability (CVE-2026-111497) in active exploitation",
       "link": "https://www.sophos.com/en-us/blog/node2shell-cve-2026-111497-in-active-exploitation",
       "summary": "",
@@ -2049,6 +2039,18 @@
       "cves": [
         "CVE-2026-111497"
       ]
+    },
+    {
+      "title": "Never Bring a Knife to a Gun Fight!",
+      "link": "https://www.sophos.com/en-us/blog/never-bring-a-knife-to-a-gun-fight",
+      "summary": "Cyber incidents create both technical and legal challenges, making coordination between DFIR teams and experienced legal counsel essential. This article explores why organizations should establish these relationships before an incident occurs and how a coordinated response can improve forensic investigations, regulator",
+      "published": "2026-10-28T00:00:00+00:00",
+      "image": null,
+      "source": "Sophos News",
+      "source_id": "sophosnews",
+      "category": "Vendor",
+      "tags": [],
+      "cves": []
     },
     {
       "title": "3 Frameworks to Protect CISOs & Orgs Against AI Liability",
@@ -3691,7 +3693,7 @@
       "ok": true,
       "count": 40,
       "error": null,
-      "fetched_at": "2026-10-31T13:26:51.979736+00:00"
+      "fetched_at": "2026-10-31T17:52:34.807530+00:00"
     },
     {
       "id": "bleepingcomputer",
@@ -3699,7 +3701,7 @@
       "ok": true,
       "count": 15,
       "error": null,
-      "fetched_at": "2026-10-31T13:26:52.248601+00:00"
+      "fetched_at": "2026-10-31T17:52:34.968397+00:00"
     },
     {
       "id": "krebsonsecurity",
@@ -3707,7 +3709,7 @@
       "ok": true,
       "count": 10,
       "error": null,
-      "fetched_at": "2026-10-31T13:26:52.374645+00:00"
+      "fetched_at": "2026-10-31T17:52:35.041236+00:00"
     },
     {
       "id": "darkreading",
@@ -3715,7 +3717,7 @@
       "ok": true,
       "count": 40,
       "error": null,
-      "fetched_at": "2026-10-31T13:26:52.509454+00:00"
+      "fetched_at": "2026-10-31T17:52:35.196327+00:00"
     },
     {
       "id": "securityweek",
@@ -3723,7 +3725,7 @@
       "ok": true,
       "count": 10,
       "error": null,
-      "fetched_at": "2026-10-31T13:26:52.941060+00:00"
+      "fetched_at": "2026-10-31T17:52:35.709217+00:00"
     },
     {
       "id": "schneier",
@@ -3731,7 +3733,7 @@
       "ok": true,
       "count": 10,
       "error": null,
-      "fetched_at": "2026-10-31T13:26:53.075649+00:00"
+      "fetched_at": "2026-10-31T17:52:35.766467+00:00"
     },
     {
       "id": "sophosnews",
@@ -3739,7 +3741,7 @@
       "ok": true,
       "count": 9,
       "error": null,
-      "fetched_at": "2026-10-31T13:26:53.188425+00:00"
+      "fetched_at": "2026-10-31T17:52:35.843617+00:00"
     },
     {
       "id": "cisa",
@@ -3747,7 +3749,7 @@
       "ok": false,
       "count": 0,
       "error": "HTTPError: HTTP Error 403: Forbidden",
-      "fetched_at": "2026-10-31T13:26:53.455986+00:00"
+      "fetched_at": "2026-10-31T17:52:35.936203+00:00"
     },
     {
       "id": "msrc",
@@ -3755,7 +3757,7 @@
       "ok": true,
       "count": 10,
       "error": null,
-      "fetched_at": "2026-10-31T13:26:59.705788+00:00"
+      "fetched_at": "2026-10-31T17:52:42.040952+00:00"
     },
     {
       "id": "talos",
@@ -3763,7 +3765,7 @@
       "ok": true,
       "count": 15,
       "error": null,
-      "fetched_at": "2026-10-31T13:26:59.914324+00:00"
+      "fetched_at": "2026-10-31T17:52:42.307714+00:00"
     },
     {
       "id": "unit42",
@@ -3771,7 +3773,7 @@
       "ok": true,
       "count": 15,
       "error": null,
-      "fetched_at": "2026-10-31T13:27:00.078271+00:00"
+      "fetched_at": "2026-10-31T17:52:42.391986+00:00"
     },
     {
       "id": "crowdstrike",
@@ -3779,7 +3781,7 @@
       "ok": true,
       "count": 10,
       "error": null,
-      "fetched_at": "2026-10-31T13:27:00.187135+00:00"
+      "fetched_at": "2026-10-31T17:52:42.440942+00:00"
     },
     {
       "id": "therecord",
@@ -3787,7 +3789,7 @@
       "ok": true,
       "count": 5,
       "error": null,
-      "fetched_at": "2026-10-31T13:27:00.565117+00:00"
+      "fetched_at": "2026-10-31T17:52:42.581370+00:00"
     },
     {
       "id": "sans_isc",
@@ -3795,7 +3797,7 @@
       "ok": true,
       "count": 10,
       "error": null,
-      "fetched_at": "2026-10-31T13:27:00.781553+00:00"
+      "fetched_at": "2026-10-31T17:52:42.694680+00:00"
     },
     {
       "id": "theregister",
@@ -3803,7 +3805,7 @@
       "ok": true,
       "count": 40,
       "error": null,
-      "fetched_at": "2026-10-31T13:27:01.015049+00:00"
+      "fetched_at": "2026-10-31T17:52:43.040626+00:00"
     },
     {
       "id": "projectzero",
@@ -3811,7 +3813,7 @@
       "ok": true,
       "count": 10,
       "error": null,
-      "fetched_at": "2026-10-31T13:27:02.431293+00:00"
+      "fetched_at": "2026-10-31T17:52:43.568764+00:00"
     },
     {
       "id": "malwarebytes",
@@ -3819,7 +3821,7 @@
       "ok": true,
       "count": 20,
       "error": null,
-      "fetched_at": "2026-10-31T13:27:02.758600+00:00"
+      "fetched_at": "2026-10-31T17:52:43.805895+00:00"
     },
     {
       "id": "securityaffairs",
@@ -3827,7 +3829,7 @@
       "ok": true,
       "count": 10,
       "error": null,
-      "fetched_at": "2026-10-31T13:27:02.894057+00:00"
+      "fetched_at": "2026-10-31T17:52:43.853924+00:00"
     }
   ]
 }
