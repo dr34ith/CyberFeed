@@ -1,6 +1,20 @@
 {
-  "generated_at": "2026-10-30T21:37:35.286943+00:00",
+  "generated_at": "2026-10-31T01:02:47.959914+00:00",
   "items": [
+    {
+      "title": "Yoba Malware Hides a Crypto Miner Behind Legitimate OpenAI and Anthropic Binaries",
+      "link": "https://securityaffairs.com/202149/malware/yoba-malware-hides-a-crypto-miner-behind-legitimate-openai-and-anthropic-binaries.html",
+      "summary": "Yoba malware uses fake ChatGPT and Claude apps to sideload malware through signed installers and deploy a cryptocurrency miner. Check Point Research has spent two months tracking a campaign it calls Yoba, which uses the popularity of AI tools to spread a custom malware chain. The attackers build fake GitHub projects th",
+      "published": "2026-10-30T21:22:59+00:00",
+      "image": null,
+      "source": "Security Affairs",
+      "source_id": "securityaffairs",
+      "category": "News",
+      "tags": [
+        "malware"
+      ],
+      "cves": []
+    },
     {
       "title": "Critical Linux kernel flaw allows remote root attacks on MPTCP servers",
       "link": "https://www.bleepingcomputer.com/news/security/critical-linux-kernel-flaw-allows-remote-root-attacks-on-mptcp-servers",
@@ -66,6 +80,18 @@
       "tags": [
         "malware"
       ],
+      "cves": []
+    },
+    {
+      "title": "Behind the Scenes of How Operation Blackout Went Down",
+      "link": "https://www.darkreading.com/cybersecurity-operations/behind-the-scenes-how-operation-blackout-went-down",
+      "summary": "A recent law enforcement operation to dismantle harmful scam centers was a big success. A threat intelligence expert walks us through what happened and why he wants more of the same.",
+      "published": "2026-10-30T19:46:08+00:00",
+      "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blted8eeb1e23f7df84/6ae3bbdee7e856ef65896aec/GettyImages-1294781573.jpg?width=720&quality=80&disable=upscale",
+      "source": "Dark Reading",
+      "source_id": "darkreading",
+      "category": "News",
+      "tags": [],
       "cves": []
     },
     {
@@ -1324,18 +1350,6 @@
       "cves": []
     },
     {
-      "title": "Election Website Security: 42% of US County Sites Still Lack .gov Domains",
-      "link": "https://securityaffairs.com/201967/security/election-website-security-42-of-us-county-sites-still-lack-gov-domains.html",
-      "summary": "US election websites show improved security, but weak email protection, non-.gov domains and third-party tracking still expose voters to risks. Millions of Americans will use websites to check their registration, find polling places or track ballots before the November 3 election. However, a new study finds that many c",
-      "published": "2026-10-29T09:21:41+00:00",
-      "image": null,
-      "source": "Security Affairs",
-      "source_id": "securityaffairs",
-      "category": "News",
-      "tags": [],
-      "cves": []
-    },
-    {
       "title": "Attacker Tried to Exploit Alpine Linux’s GitLab via CVSS 10.0 Flaw Its Ruby Left Open",
       "link": "https://thehackernews.com/2026/10/attacker-tried-to-exploit-alpine-linuxs.html",
       "summary": "An attacker tried to exploit a critical GitLab vulnerability on the Alpine Linux project's own GitLab server a week after GitLab released a fix, Alpine Linux said on 28 October. The flaw, CVE-2026-97229 (CVSS score: 10.0), can let an attacker run code on a GitLab server through a crafted regular expression in a CI conf",
@@ -1941,18 +1955,6 @@
       "cves": []
     },
     {
-      "title": "Never Bring a Knife to a Gun Fight!",
-      "link": "https://www.sophos.com/en-us/blog/never-bring-a-knife-to-a-gun-fight",
-      "summary": "Cyber incidents create both technical and legal challenges, making coordination between DFIR teams and experienced legal counsel essential. This article explores why organizations should establish these relationships before an incident occurs and how a coordinated response can improve forensic investigations, regulator",
-      "published": "2026-10-28T00:00:00+00:00",
-      "image": null,
-      "source": "Sophos News",
-      "source_id": "sophosnews",
-      "category": "Vendor",
-      "tags": [],
-      "cves": []
-    },
-    {
       "title": "‘Node2Shell’ vulnerability (CVE-2026-111497) in active exploitation",
       "link": "https://www.sophos.com/en-us/blog/node2shell-cve-2026-111497-in-active-exploitation",
       "summary": "",
@@ -1967,6 +1969,18 @@
       "cves": [
         "CVE-2026-111497"
       ]
+    },
+    {
+      "title": "Never Bring a Knife to a Gun Fight!",
+      "link": "https://www.sophos.com/en-us/blog/never-bring-a-knife-to-a-gun-fight",
+      "summary": "Cyber incidents create both technical and legal challenges, making coordination between DFIR teams and experienced legal counsel essential. This article explores why organizations should establish these relationships before an incident occurs and how a coordinated response can improve forensic investigations, regulator",
+      "published": "2026-10-28T00:00:00+00:00",
+      "image": null,
+      "source": "Sophos News",
+      "source_id": "sophosnews",
+      "category": "Vendor",
+      "tags": [],
+      "cves": []
     },
     {
       "title": "3 Frameworks to Protect CISOs & Orgs Against AI Liability",
@@ -3035,20 +3049,6 @@
       "cves": []
     },
     {
-      "title": "Cloud Security Alliance Survey Finds Data Loss Prevention Often Detects Data Loss Only After It Happens",
-      "link": "https://www.darkreading.com/cloud-security/cloud-security-alliance-survey-data-loss-prevention-detects-data-loss",
-      "summary": "Research finds that, among respondents experiencing data loss, only 16% said DLP blocked their most significant incidents before data left the organization.",
-      "published": "2026-10-21T20:03:14+00:00",
-      "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt850556f866500627/654a5a8e05eb4d040a046894/325351_DR23_Graphics_General_Large_Text_v1.png?width=720&quality=80&disable=upscale",
-      "source": "Dark Reading",
-      "source_id": "darkreading",
-      "category": "News",
-      "tags": [
-        "cloud"
-      ],
-      "cves": []
-    },
-    {
       "title": "AI-driven, large-scale nation-state campaign using ARTEX enables supply chain compromise",
       "link": "https://www.microsoft.com/en-us/security/blog/2026/10/21/storm-0940-uses-artex-agentic-ai-connectwise-supply-chain-compromise",
       "summary": "Storm-0940 used ARTEX agentic AI to accelerate a ConnectWise supply chain compromise, enabling application credential abuse across Microsoft 365 environments. The post AI-driven, large-scale nation-state campaign using ARTEX enables supply chain compromise appeared first on Microsoft Security Blog .",
@@ -3698,7 +3698,7 @@
       "ok": true,
       "count": 40,
       "error": null,
-      "fetched_at": "2026-10-30T21:37:23.607679+00:00"
+      "fetched_at": "2026-10-31T01:02:37.108577+00:00"
     },
     {
       "id": "bleepingcomputer",
@@ -3706,7 +3706,7 @@
       "ok": true,
       "count": 15,
       "error": null,
-      "fetched_at": "2026-10-30T21:37:23.843696+00:00"
+      "fetched_at": "2026-10-31T01:02:37.414328+00:00"
     },
     {
       "id": "krebsonsecurity",
@@ -3714,7 +3714,7 @@
       "ok": true,
       "count": 10,
       "error": null,
-      "fetched_at": "2026-10-30T21:37:23.920550+00:00"
+      "fetched_at": "2026-10-31T01:02:37.553618+00:00"
     },
     {
       "id": "darkreading",
@@ -3722,7 +3722,7 @@
       "ok": true,
       "count": 40,
       "error": null,
-      "fetched_at": "2026-10-30T21:37:24.120820+00:00"
+      "fetched_at": "2026-10-31T01:02:37.725000+00:00"
     },
     {
       "id": "securityweek",
@@ -3730,7 +3730,7 @@
       "ok": true,
       "count": 10,
       "error": null,
-      "fetched_at": "2026-10-30T21:37:24.613495+00:00"
+      "fetched_at": "2026-10-31T01:02:38.539445+00:00"
     },
     {
       "id": "schneier",
@@ -3738,7 +3738,7 @@
       "ok": true,
       "count": 10,
       "error": null,
-      "fetched_at": "2026-10-30T21:37:24.778243+00:00"
+      "fetched_at": "2026-10-31T01:02:38.641467+00:00"
     },
     {
       "id": "sophosnews",
@@ -3746,7 +3746,7 @@
       "ok": true,
       "count": 9,
       "error": null,
-      "fetched_at": "2026-10-30T21:37:24.963851+00:00"
+      "fetched_at": "2026-10-31T01:02:38.729574+00:00"
     },
     {
       "id": "cisa",
@@ -3754,7 +3754,7 @@
       "ok": false,
       "count": 0,
       "error": "HTTPError: HTTP Error 403: Forbidden",
-      "fetched_at": "2026-10-30T21:37:25.086624+00:00"
+      "fetched_at": "2026-10-31T01:02:38.853818+00:00"
     },
     {
       "id": "msrc",
@@ -3762,7 +3762,7 @@
       "ok": true,
       "count": 10,
       "error": null,
-      "fetched_at": "2026-10-30T21:37:31.274929+00:00"
+      "fetched_at": "2026-10-31T01:02:44.992617+00:00"
     },
     {
       "id": "talos",
@@ -3770,7 +3770,7 @@
       "ok": true,
       "count": 15,
       "error": null,
-      "fetched_at": "2026-10-30T21:37:31.381160+00:00"
+      "fetched_at": "2026-10-31T01:02:45.036667+00:00"
     },
     {
       "id": "unit42",
@@ -3778,7 +3778,7 @@
       "ok": true,
       "count": 15,
       "error": null,
-      "fetched_at": "2026-10-30T21:37:31.538712+00:00"
+      "fetched_at": "2026-10-31T01:02:45.137420+00:00"
     },
     {
       "id": "crowdstrike",
@@ -3786,7 +3786,7 @@
       "ok": true,
       "count": 10,
       "error": null,
-      "fetched_at": "2026-10-30T21:37:31.678630+00:00"
+      "fetched_at": "2026-10-31T01:02:45.205240+00:00"
     },
     {
       "id": "therecord",
@@ -3794,7 +3794,7 @@
       "ok": true,
       "count": 5,
       "error": null,
-      "fetched_at": "2026-10-30T21:37:31.960820+00:00"
+      "fetched_at": "2026-10-31T01:02:45.446044+00:00"
     },
     {
       "id": "sans_isc",
@@ -3802,7 +3802,7 @@
       "ok": true,
       "count": 10,
       "error": null,
-      "fetched_at": "2026-10-30T21:37:32.245434+00:00"
+      "fetched_at": "2026-10-31T01:02:45.679184+00:00"
     },
     {
       "id": "theregister",
@@ -3810,7 +3810,7 @@
       "ok": true,
       "count": 40,
       "error": null,
-      "fetched_at": "2026-10-30T21:37:32.534527+00:00"
+      "fetched_at": "2026-10-31T01:02:45.992080+00:00"
     },
     {
       "id": "projectzero",
@@ -3818,7 +3818,7 @@
       "ok": true,
       "count": 10,
       "error": null,
-      "fetched_at": "2026-10-30T21:37:33.394581+00:00"
+      "fetched_at": "2026-10-31T01:02:46.646288+00:00"
     },
     {
       "id": "malwarebytes",
@@ -3826,7 +3826,7 @@
       "ok": true,
       "count": 20,
       "error": null,
-      "fetched_at": "2026-10-30T21:37:33.656763+00:00"
+      "fetched_at": "2026-10-31T01:02:47.000521+00:00"
     },
     {
       "id": "securityaffairs",
@@ -3834,7 +3834,7 @@
       "ok": true,
       "count": 10,
       "error": null,
-      "fetched_at": "2026-10-30T21:37:33.938501+00:00"
+      "fetched_at": "2026-10-31T01:02:47.077429+00:00"
     }
   ]
 }
